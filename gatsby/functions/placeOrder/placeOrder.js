@@ -36,7 +36,6 @@ function wait(ms = 0) {
 
 exports.handler = async (event, context) => {
   const body = JSON.parse(event.body);
-  console.log(body);
   if (body.mapleSyrup) {
     return {
       statusCode: 400,
